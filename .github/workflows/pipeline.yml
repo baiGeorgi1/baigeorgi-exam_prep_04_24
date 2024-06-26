@@ -24,6 +24,7 @@ jobs:
             - name: Display my SoftUni username
               run: echo 'baigeorgi'
     UI-tests:
+        needs: build-and-test
         runs-on: ubuntu-latest
         steps:
             - name: Checkout the code
